@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light-bulb</title>
+</head>
+<body>
+  <img id="myImage" src="Bulb-off.png" width="" height="180">
+  <button onclick="changeImage()">
+    <p>Click to switch on and off</p>
+  </button>
+
+  <script>
+    function changeImage() {
+      var image = document.getElementById('myImage');
+      if (image.src.match("Bulb-on")) {
+        image.src = "Bulb-off.png";
+      } else {
+        image.src = "Bulb-on.png";
+      }
+    }
+  </script>
+</body>
+</html>
